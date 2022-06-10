@@ -11,7 +11,7 @@ public class UserService {
     public User getByEmail(String email) {
         return User.builder()
                 .email("teste@teste.com")
-                .username("teste@teste.com")
+                .username("teste")
                 .password(new BCryptPasswordEncoder().encode("teste"))
                 .build();
     }
